@@ -89,63 +89,6 @@
 		}
 
 		/* Responsive FlipClock CSS Fixes */
-		.flipTimebox {
-			width: 100%;
-			margin: 0 auto;
-			text-align: center;
-		}
-
-		.clock {
-			display: inline-block;
-			width: auto !important;
-			margin: 0 auto !important;
-		}
-
-		/* For smaller screens */
-		@media screen and (max-width: 768px) {
-			.flipTimebox {
-				padding: 0 10px;
-				transform: scale(0.8);
-				transform-origin: center center;
-			}
-
-			/* Make sure the container has enough height to prevent cutoff */
-			.display-tc {
-				padding-bottom: 20px;
-			}
-
-			/* Adjust flip digits size for very small screens */
-			@media screen and (max-width: 480px) {
-				.flipTimebox {
-					transform: scale(0.65);
-					margin-left: -10%;
-					margin-right: -10%;
-					width: 120%;
-				}
-
-				.clock-fix.clock {
-					display: flex !important;
-					justify-content: center;
-				}
-			}
-		}
-
-		/* Fix for FlipClock alignment */
-		.clock-fix.clock {
-			display: flex;
-			justify-content: center;
-			width: 100% !important;
-		}
-
-		/* Ensure the flip elements are properly visible */
-		.flip-clock-wrapper ul {
-			margin: 2px;
-		}
-
-		/* Improve visibility on mobile */
-		.flip-clock-divider .flip-clock-label {
-			right: -66px;
-		}
 	</style>
 
 	<!-- Modernizr JS -->
@@ -218,8 +161,10 @@
 								<div class="flipTimebox">
 									<div class="clock clock-fix"></div>
 								</div>
-								<p><a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20250427T113000%0ADTEND:20250427T140000%0ASUMMARY:Wedding of Unais and Jamshiya%0ADESCRIPTION:Wedding ceremony at Vallencia Galleria, Markaz Knowledge City%0ALOCATION:Vallencia Galleria, Markaz Knowledge City, Kaithappoyil%0ABEGIN:VALARM%0ATRIGGER:-P1D%0AACTION:DISPLAY%0ADESCRIPTION:Wedding tomorrow!%0AEND:VALARM%0AEND:VEVENT%0AEND:VCALENDAR"
-										class="btn btn-default btn-sm" download="wedding.ics">Save our date</a></p>
+								<p><!-- Replace your current "Save our date" button with this: -->
+									<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20of%20Unais%20and%20Jamshiya&dates=20250427T113000/20250427T140000&details=Wedding%20ceremony%20at%20Vallencia%20Galleria,%20Markaz%20Knowledge%20City&location=Vallencia%20Galleria,%20Markaz%20Knowledge%20City,%20Kaithappoyil"
+										class="btn btn-default btn-sm" target="_blank">Save our date</a>
+								</p>
 							</div>
 						</div>
 					</div>
