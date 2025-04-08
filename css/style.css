@@ -2100,24 +2100,4 @@ form label {
 
 
 
-/* Mobile view styles */
-@media screen and (max-width: 768px) {
-  .flipTimebox .clock-fix {
-    margin: 0 auto;
-    /* Center the clock horizontally */
-    display: block;
-    /* Ensure it takes full width of its container */
-    /* If needed, you can also add specific width */
-    /* width: 80%; */
-    /* Adjust as needed */
-  }
-}
-
-
-
-
-
-
-
-
 /*# sourceMappingURL=style.css.map */
