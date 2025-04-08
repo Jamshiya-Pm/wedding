@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   let clock;
 
   // Grab the current date
@@ -18,32 +18,36 @@ $(document).ready(function() {
       autostart: false
     });
     console.log("Date has already passed!")
-    
+
   } else {
     // Run countdown timer
     clock = $(".clock").FlipClock(diff, {
       clockFace: "DailyCounter",
       countdown: true,
       callbacks: {
-        stop: function() {
+        stop: function () {
           console.log("Timer has ended!")
         }
       }
     });
-    
+
     // Check when timer reaches 0, then stop at 0
-    setTimeout(function() {
+    setTimeout(function () {
       checktime();
     }, 1000);
-    
+
     function checktime() {
       t = clock.getTime();
       if (t <= 0) {
         clock.setTime(0);
       }
-      setTimeout(function() {
+      setTimeout(function () {
         checktime();
       }, 1000);
     }
   }
 });
+
+
+
+
